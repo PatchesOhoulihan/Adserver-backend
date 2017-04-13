@@ -1,0 +1,13 @@
+{
+    "name": "vendor/adserver",
+    "description": "Description of project adserver.",
+    "authors": [
+        {
+            "name": "schmalte",
+            "email": "your@email.here"
+        }
+    ],
+    "require": {
+        "slim/slim": "3.8.1"
+    }
+}
