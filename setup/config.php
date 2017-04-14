@@ -5,7 +5,7 @@ return [
         'addContentLengthHeader' => false, // Allow the web server to send the content-length header
         // Renderer settings
         'renderer' => [
-            'template_path' => __DIR__ . '/../templates/',
+            'template_path' => '../templates/',
         ],
         // Monolog settings
         'logger' => [
@@ -15,9 +15,9 @@ return [
         ],
         'db' => [
             'host' => 'localhost',
-            'user' => 'user',
-            'pass' => 'password',
-            'dbname' => 'test',
+            'user' => 'root',
+            'pass' => '',
+            'dbname' => 'guj',
         ],
     ],
 ];
