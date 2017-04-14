@@ -1,14 +1,20 @@
 <?php
-use \Psr\Http\Message\ServerRequestInterface as Request;
-use \Psr\Http\Message\ResponseInterface as Response;
 
 require '../vendor/autoload.php';
 
-$app = new \Slim\App;
-$app->get('/', function (Request $request, Response $response) {
-    //$name = $request->getAttribute('name');
-    $response->getBody()->write("Hello, Honey");
+$config = require '../setup/config.php';
 
-    return $response;
-});
+$app = new \Slim\App($config);
+
+require '../setup/dependencies.php';
+
+// Register Startup Site, indicates that the service is running
+require '../routes/monitoring.php';
+
+//Register Customer Routes, do the desired work
+require '../routes/customers.php';
+
+
 $app->run();
+
+

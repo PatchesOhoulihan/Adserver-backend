@@ -1,6 +1,8 @@
 {
     "name": "vendor/adserver",
-    "description": "Description of project adserver.",
+    "description": "A little Adserver.",
+    "keywords": ["Slim", "rest", "Adserver"],
+    "license": "MIT",
     "authors": [
         {
             "name": "schmalte",
@@ -8,6 +10,8 @@
         }
     ],
     "require": {
-        "slim/slim": "3.8.1"
+        "slim/slim": "3.8.1",
+        "monolog/monolog": "1.22.1",
+        "slim/php-view": "2.2.0"
     }
 }
