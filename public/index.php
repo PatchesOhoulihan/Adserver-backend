@@ -8,6 +8,8 @@ $app = new \Slim\App($config);
 
 require '../setup/dependencies.php';
 
+require '../middleware/middleware.php';
+
 // Register Startup Site, indicates that the service is running
 require '../routes/monitoring.php';
 

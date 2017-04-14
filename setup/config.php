@@ -19,5 +19,13 @@ return [
             'pass' => '',
             'dbname' => 'guj',
         ],
+        'cors-options' => [
+            "origin" => ["*"],
+            "methods" => ["GET", "POST", "PUT", "PATCH", "DELETE"],
+            "headers.allow" => ["Authorization", "If-Match", "If-Unmodified-Since"],
+            "headers.expose" => ["Etag"],
+            "credentials" => true,
+            "cache" => 86400
+        ]
     ],
 ];
