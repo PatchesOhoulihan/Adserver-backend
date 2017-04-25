@@ -21,10 +21,10 @@ return [
         ],
         'cors-options' => [
             "origin" => ["*"],
-            "methods" => ["GET", "POST", "PUT", "PATCH", "DELETE"],
+            "methods" => ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
             "headers.allow" => ["Authorization", "If-Match", "If-Unmodified-Since"],
             "headers.expose" => ["Etag"],
-            "credentials" => true,
+            "credentials" => false,
             "cache" => 86400
         ]
     ],

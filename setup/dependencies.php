@@ -1,7 +1,6 @@
 <?php
 
 //Contains all Service Factories
-
 $container = $app->getContainer();
 
 // view renderer
